@@ -6,10 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GradeProject",
+            "request": "launch",
+            "mainClass": "GradeProject",
+            "projectName": "gui-mini-project-arrays-methods-file-i-o-benvandik_207d3537"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
-            "mainClass": "App",    // Change this to match class containing main method
-            "vmArgs": "--module-path \"c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\" --add-modules javafx.controls,javafx.fxml" // Change this to match your JavaFX lib path
+            "mainClass": "App",
+            "vmArgs": "--module-path \"c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
