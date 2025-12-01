@@ -41,7 +41,7 @@ public class App extends Application {
                 ovrBox.setPromptText("Example: 100 or 50 or 20");
                 ovrBox.setStyle("-fx-background-color: darkgray; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-padding: 8;");
                 
-            Button sendBtn = new Button ("Send 🤞");
+            Button sendBtn = new Button ("Calculate 🤞");
                 sendBtn.setStyle ("-fx-background-color: limegreen; -fx-text-fill: black; -fx-font-size: 15px; -fx-font-weight: bold; -fx-padding: 10;");
 
                 Label resultLBL = new Label();
@@ -50,8 +50,13 @@ public class App extends Application {
 
                 // set actions.
                 sendBtn.setOnAction(event -> {
-                    String[] gradeStrings = gradeBox.getText().split(" ");
-                    Double[] grade = new Double[gradeStrings.length];
+                    Double got = Double.parseDouble(gradeBox.getText());
+                    Double total = Double.parseDouble(ovrBox.getText());
+
+                    Double finalGrade = (got/ total) * 100 ;
+
+                    Label mark = new Label("you got approximately " +finalGrade+ " / 100  😁😁😁");
+                    instructionsLBL.setStyle ("-fx-font-size: 16; -fx-text-fill: lightgray;");
 
                 });
 
