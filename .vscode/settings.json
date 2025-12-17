@@ -1,0 +1,26 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.base.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.controls.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.fxml.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.graphics.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.media.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.swing.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.web.jar",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx-swt.jar"
+        ],
+        "sources": {
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.base.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.base",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.controls.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.controls",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.fxml.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.fxml",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.graphics.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.graphics",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.media.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.media",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.swing.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.swing",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx.web.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx.web",
+            "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\lib\\javafx-swt.jar": "c:\\Users\\oc9ps08\\OneDrive - Limestone DSB\\Grade_11_CS\\lib\\javafx-sdk-21.0.9\\scr\\javafx-swt"
+        }
+    },
+
+}
