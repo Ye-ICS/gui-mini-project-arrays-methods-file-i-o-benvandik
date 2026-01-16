@@ -14,6 +14,9 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class App extends Application {
+    TextField fileName;
+    double finalGrade;
+    Label resultLBL;
     public static void main(String[] args) {
         launch(args);
     }
@@ -40,7 +43,7 @@ public class App extends Application {
         gradeBox.setStyle(
                 "-fx-background-color: darkgray; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-padding: 8;");
 
-        TextField ovrBox = new TextField();
+        TextField ovrBox = new TextField(); 
         ovrBox.setMaxWidth(150);
         ovrBox.setPromptText("Example: 100 or 50 or 20");
         ovrBox.setStyle("-fx-background-color: darkgray; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-padding: 8;");
@@ -51,7 +54,7 @@ public class App extends Application {
         Button saveBtn = new Button("Save Grades 💾");
         saveBtn.setStyle("-fx-background-color: orange; -fx-text-fill: black; -fx-font-size: 15px; -fx-font-weight: bold; -fx-padding: 10;");
 
-        Label resultLBL = new Label();
+        resultLBL = new Label();
         resultLBL.setStyle("-fx-text-fill: white; -fx-font-size: 14; -fx-padding: 8;");
         mainBox.getChildren().add(resultLBL);
 
@@ -80,7 +83,7 @@ public class App extends Application {
             HBox fileBox = new HBox();
             fileBox.setStyle("-fx-background-color: dimgray; -fx-border-color: limegreen; -fx-border-width: 2; -fx-padding: 10;");
             
-            TextField fileName = new TextField();
+            fileName = new TextField();
             fileName.setMaxWidth(150);
             fileName.setPromptText("Example: MyGrades");
             fileName.setStyle("-fx-background-color: darkgray; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-padding: 8;");
@@ -88,26 +91,12 @@ public class App extends Application {
             Label fileNameLabel = new Label("what name do you want the file to be saved as?");
             fileNameLabel.setStyle("-fx-text-fill: white; -fx-font-size: 14; -fx-padding: 8;");
 
-            double finalGrade = finalSum / count;
+            finalGrade = finalSum / count;
             resultLBL.setText("Final grade ≈ " + String.format("%.2f", finalGrade) + "% 😁");
 
             // fileOut.flush(); // Optional, tells it to save the file RIGHT NOW.
             saveBtn.setOnAction(even -> {
-                try{
-                    
-                    String[] fileNameText = fileName.getText().split(",");
-                    
-                    
-                    PrintWriter fileWriter = new PrintWriter(new FileWriter("" + fileNameText[0] + ".txt"));
-                    fileWriter.println("High score: ");
-                    fileWriter.print("High scorer: ");
-                    fileWriter.close();
-
-                } catch (IOException er) {
-                    return;
-                } catch (Exception ex) {
-                    resultLBL.setText(" An error occurred while saving the file.");
-                }
+                saveToFile ();
             });
             fileBox.getChildren().addAll(fileNameLabel, fileName);
             mainBox.getChildren().add(fileBox);
@@ -118,5 +107,22 @@ public class App extends Application {
         stage.setScene(scene);
         stage.setTitle("My Final Grades 😎😁👌");
         stage.show();
+    }
+
+    /**
+     * Save the grade calculated inside a file.
+     */
+    void saveToFile () {
+        try{    
+            String[] fileNameText = fileName.getText().split(",");
+            PrintWriter fileWriter = new PrintWriter(new FileWriter("" + fileNameText[0] + ".txt"));
+            fileWriter.print("For your classe, the final grade you  got is " + finalGrade + " %");
+            fileWriter.println("But i think you can do better! so set a goal for your grow. " );
+            fileWriter.close();
+        } catch (IOException er) {
+            return;
+        } catch (Exception ex) {
+            resultLBL.setText(" An error occurred while saving the file.");
+        }
     }
 }
